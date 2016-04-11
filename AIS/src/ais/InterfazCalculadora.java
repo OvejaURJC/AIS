@@ -17,6 +17,12 @@ public class InterfazCalculadora extends javax.swing.JFrame {
         initComponents();
     }
 
+    public String borraCaracter(String cadena) {
+        if (cadena == null || cadena.length() == 0) {
+            return cadena;
+        }
+        return cadena.substring(0, cadena.length()-1);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -355,92 +361,124 @@ public class InterfazCalculadora extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         //BOTON 0
         //es pulsado > manda caracter "0" al primer campo de texto
         //igual con el resto de botones con su caracter respectivo
-    }//GEN-LAST:event_jButton10ActionPerformed
+        
+        jTextField1.setText(jTextField1.getText() + "0");
+    }                                         
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // BOTON PUNTO
-    }//GEN-LAST:event_jButton11ActionPerformed
+        jTextField1.setText(jTextField1.getText() + ".");
+    }                                         
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // BOTON IGUAL
         //es pulsado>recoge en un string todo lo que aparece en el campo de texto primero
         //hace función enviando String
         //recibe resultado> lo muestra en segundo campo
-    }//GEN-LAST:event_jButton12ActionPerformed
+        String operacion;
+        operacion = jTextField1.getText();
+        //String resultado=operador(operacion);
+        //jTextField2.setText(resultado);
+    }                                         
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON UNO
-    }//GEN-LAST:event_jButton7ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "1");
+    }                                        
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON DOS
-    }//GEN-LAST:event_jButton8ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "2");
+    }                                        
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON TRES
-    }//GEN-LAST:event_jButton9ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "3");
+    }                                        
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON CUATRO
-    }//GEN-LAST:event_jButton4ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "4");
+    }                                        
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // boton cinco
-    }//GEN-LAST:event_jButton5ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "5");
+    }                                        
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // boton seis
-    }//GEN-LAST:event_jButton6ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "6");
+    }                                        
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // boton siete
-    }//GEN-LAST:event_jButton1ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "7");
+    }                                        
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         //boton ocho
-    }//GEN-LAST:event_jButton2ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "8");
+    }                                        
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // boton nueve
-    }//GEN-LAST:event_jButton3ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "9");
+    }                                        
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton mas
-    }//GEN-LAST:event_jButton13ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "+");
+    }                                         
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton menos
-    }//GEN-LAST:event_jButton14ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "-");
+    }                                         
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton multiplicacion
-    }//GEN-LAST:event_jButton15ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "*");
+    }                                         
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton division
-    }//GEN-LAST:event_jButton16ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "/");
+    }                                         
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton cerrar parentesis
-    }//GEN-LAST:event_jButton17ActionPerformed
+        jTextField1.setText(jTextField1.getText() + ")");
+    }                                         
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton abrir parentesis
-    }//GEN-LAST:event_jButton18ActionPerformed
+        jTextField1.setText(jTextField1.getText() + "(");
+    }                                         
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }                                           
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // boton borrar
         //es pulsado > borra el string del primer campo de texto
-    }//GEN-LAST:event_jButton19ActionPerformed
+        jTextField1.setText("");
+    }                                         
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // boton borrar un caracter
+        //es pulsado > borra un caracter del string del primer campo de texto
+        String cadena = jTextField1.getText();
+        cadena = borraCaracter(cadena);
+        jTextField1.setText(cadena);
+    }
+
+//GEN-LAST:event_jButton19ActionPerformed
 
     /**
      * @param args the command line arguments
