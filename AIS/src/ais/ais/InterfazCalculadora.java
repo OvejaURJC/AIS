@@ -72,7 +72,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setText("0");
+        //jTextField1.setText("0");
 
         jTextField2.setText("Ans");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
 
         jLabel2.setText("Solución:");
 
-        jButton8.setText("2");
+        jButton8.setText("8");
         jButton8.setActionCommand("buttonDos");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,7 +93,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton9.setText("3");
+        jButton9.setText("9");
         jButton9.setActionCommand("button3");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +117,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("7");
+        jButton1.setText("1");
         jButton1.setActionCommand("buttonSiete");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,7 +133,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("8");
+        jButton2.setText("2");
         jButton2.setActionCommand("buttonOcho");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,7 +149,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("9");
+        jButton3.setText("3");
         jButton3.setActionCommand("buttonNueve");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,7 +189,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setText("1");
+        jButton7.setText("7");
         jButton7.setActionCommand("buttonUno");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -388,17 +388,17 @@ public class InterfazCalculadora extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON UNO
-        jTextField1.setText(jTextField1.getText() + "1");
+        jTextField1.setText(jTextField1.getText() + "7");
     }                                        
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON DOS
-        jTextField1.setText(jTextField1.getText() + "2");
+        jTextField1.setText(jTextField1.getText() + "8");
     }                                        
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // BOTON TRES
-        jTextField1.setText(jTextField1.getText() + "3");
+        jTextField1.setText(jTextField1.getText() + "9");
     }                                        
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -418,17 +418,17 @@ public class InterfazCalculadora extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // boton siete
-        jTextField1.setText(jTextField1.getText() + "7");
+        jTextField1.setText(jTextField1.getText() + "1");
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         //boton ocho
-        jTextField1.setText(jTextField1.getText() + "8");
+        jTextField1.setText(jTextField1.getText() + "2");
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // boton nueve
-        jTextField1.setText(jTextField1.getText() + "9");
+        jTextField1.setText(jTextField1.getText() + "3");
     }                                        
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
