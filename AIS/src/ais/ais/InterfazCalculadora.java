@@ -73,6 +73,7 @@ public class InterfazCalculadora extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTextField1.setText("0");
+        
 
         jTextField2.setText("Ans");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
