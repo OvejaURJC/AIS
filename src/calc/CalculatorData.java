@@ -142,7 +142,7 @@ public class CalculatorData {
 			throw new SyntaxException("Parentesis no balanceados");
 		}
 		
-		// Buscar parentesis atómicos
+		// Buscar parentesis atomicos
 		while(existenParentesisAtomicos(str)) {
 			List<String> paren = cogerParentesisAtomicos(str);
 			List<Double> resParen = new ArrayList<Double>();
