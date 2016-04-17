@@ -136,8 +136,10 @@ public class CalculatorData {
 		str = str.replace(" ", "");
 		
 		// Validacion
-		if((str.length() == 0) || !parentesisBalanceados(str)) {
-			throw new SyntaxException("Entrada incorrecta");
+		if(str.length() == 0) {
+			throw new SyntaxException("Entrada vacía");
+		} else if(!parentesisBalanceados(str)) {
+			throw new SyntaxException("Parentesis no balanceados");
 		}
 		
 		// Buscar parentesis atómicos
