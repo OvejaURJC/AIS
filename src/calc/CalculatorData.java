@@ -137,7 +137,7 @@ public class CalculatorData {
 		
 		// Validacion
 		if((str.length() == 0) || !parentesisBalanceados(str)) {
-			throw new SyntaxException("Entrada incorrecta");
+			throw new SyntaxException("Error de sintaxis");
 		}
 		
 		// Buscar parentesis atómicos
