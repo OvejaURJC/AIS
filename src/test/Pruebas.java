@@ -1,8 +1,8 @@
 package test;
 
-import ais.CalculatorData;
-import ais.DivisionByZeroException;
-import ais.SyntaxException;
+import calc.CalculatorData;
+import calc.DivisionByZeroException;
+import calc.SyntaxException;
 import junit.framework.TestCase;
 
 public class Pruebas extends TestCase {

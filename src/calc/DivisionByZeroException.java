@@ -1,4 +1,4 @@
-package ais;
+package calc;
 
 public class DivisionByZeroException extends Exception {
 	
